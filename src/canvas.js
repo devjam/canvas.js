@@ -42,7 +42,7 @@
 
       this.main = __bind(this.main, this);
 
-      this.cv = document.getElementById(canvasID);
+      this.cv = this.getCanvas(canvasID);
       this.cx = this.cv.getContext("2d");
       this._isResize = isResize;
       if (isResize) {

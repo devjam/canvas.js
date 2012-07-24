@@ -16,7 +16,7 @@ class Canvas
 	_timer: null
 
 	constructor: (canvasID, width, height, isResize = true)->
-		@cv = document.getElementById(canvasID)
+		@cv = @getCanvas(canvasID)
 		@cx = @cv.getContext("2d")
 		@_isResize = isResize
 		if isResize
